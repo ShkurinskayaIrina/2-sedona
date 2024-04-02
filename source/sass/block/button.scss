@@ -1,0 +1,33 @@
+.button {
+  display: block;
+  padding: 14px 5px 18px;
+  text-align: center;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-white;
+  background-color: $color-blue;
+  border: none;
+  cursor: pointer;
+
+  &--disabled {
+    pointer-events: none;
+    cursor: default;
+    background-color: $color-light-gray;
+  }
+
+  &:hover {
+    background-color: $color-blue-grey;
+  }
+
+  &:focus {
+    outline: 2px solid $color-black;
+  }
+
+  &:active {
+    background-color: $color-blue-grey-dack;
+    color: rgba($color-white, 0.3);
+    outline: none;
+  }
+}

@@ -1,0 +1,163 @@
+.controls {
+  display: grid;
+  grid-template-columns: 15px max-content 1fr max-content 10px max-content 15px;
+  grid-template-rows: max-content max-content 0;
+  row-gap: 12px;
+  align-items: flex-start;
+  margin: 0 20px;
+  background-color: $color-smok-gray;
+
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: max-content 32px 1fr 33px max-content 11px max-content;
+    grid-template-rows: none;
+    margin: 0;
+    padding: 25px 31px 25px 25px;
+
+    background-color: $color-black;
+    opacity: 0.6;
+  }
+}
+
+.controls__volume {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  display: grid;
+  padding: 15px 23px 13px 22px;
+  height: 100%;
+
+  background-color: rgba($color-black, 0.6);
+
+  @media (min-width: $tablet-width) {
+    grid-column: 3 / 4;
+    grid-row: 1 / 1;
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+}
+
+.controls__bar {
+  appearance: none;
+  margin: 0;
+  min-height: 17px;
+  background: transparent;
+  cursor: pointer;
+
+  &:focus {
+    outline: 2px solid $color-white;
+  }
+}
+
+.controls__bar::-moz-range-thumb {
+  //стилизация ползунка для Firefox
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  border: none;
+  background-color: $color-white;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-light-black;
+    box-shadow: 0 0 0 2px $color-light-black;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.controls__bar::-webkit-slider-thumb {
+  //стилизация ползунка Chrome
+  appearance: none;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: $color-white;
+  margin-top: -3px;
+  padding: 0;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-light-black;
+    box-shadow: 0 0 0 2px $color-light-black;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.controls__bar::-webkit-slider-runnable-track {
+  //Стилизация дорожки Chrome
+  height: 3px;
+  background-color: rgba($color-white, 0.2);
+}
+
+.controls__bar::-moz-range-track {
+  //Стилизация дорожки для Firefox
+  height: 3px;
+  background-color: rgba($color-white, 0.2);
+}
+
+.controls__button {
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  & svg {
+    color: $color-dull-grey;
+
+    @media (min-width: $tablet-width) {
+      color: $color-white;
+    }
+  }
+
+  &:hover svg {
+    color: $color-light-black;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    outline: 2px solid $color-black;
+
+    @media (min-width: $tablet-width) {
+      outline-color: $color-white;
+    }
+  }
+}
+
+.controls__replay {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 1;
+  }
+}
+
+.controls__subtitles {
+  grid-column: 4 / 5;
+  grid-row: 2 / 3;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 5 / 6;
+    grid-row: 1 / 1;
+  }
+}
+
+.controls__fullscreen {
+  grid-column: 6 / 7;
+  grid-row: 2 / 3;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 7 / 8;
+    grid-row: 1 / 1;
+  }
+}

@@ -1,0 +1,35 @@
+.main-header__container {
+  padding: 30px 24px 48px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 42px;
+    padding-bottom: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 53px;
+    padding-bottom: 44px;
+  }
+}
+
+.main-header__heading {
+  margin: 0;
+  margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 31px;
+  }
+}
+
+.main-header__text {
+  margin: 0;
+}
+
+.main-header__text.page__text {
+  line-height: 26px;
+}

@@ -1,0 +1,35 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 48px;
+  color: $color-white;
+  background-color: $color-blue;
+
+  &:hover {
+    background-color: $color-blue-grey;
+  }
+
+  &:focus {
+    outline: 2px solid $color-black;
+  }
+
+  &:active {
+    background-color: $color-blue-grey-dack;
+
+    & svg {
+      opacity: 30%;
+    }
+  }
+}

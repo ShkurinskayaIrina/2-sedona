@@ -1,0 +1,39 @@
+.page-footer {
+  display: grid;
+  align-items: center;
+  gap: 20px;
+  padding-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 30% 1fr 30%;
+    padding: 14px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 120px;
+    padding-left: 120px;
+  }
+}
+
+.page-footer__hashtag {
+  margin: 0;
+  padding: 15px 0;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    align-self: center;
+    justify-self: flex-start;
+  }
+}
+
+.page-footer__copyright {
+  min-height: 75px;
+
+  @media (min-width: $tablet-width) {
+    justify-self: flex-end;
+  }
+}

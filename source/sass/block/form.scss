@@ -1,0 +1,175 @@
+.form {
+  padding-top: 20px;
+  padding-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 67px;
+    padding-bottom: 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 38px;
+    padding-bottom: 74px;
+  }
+}
+
+.form__container {
+  display: grid;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "impress snp"
+      "contacts contacts"
+      "sight sight"
+      "comment comment";
+    row-gap: 50px;
+    margin: 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    row-gap: 42px;
+    margin: 0 120px;
+  }
+}
+
+.form__group {
+  margin: 0;
+  padding: 0 20px 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.form__group + .form__group {
+  @media (max-width: calc($tablet-width - 1px)) {
+    margin-top: 20px;
+  }
+
+  &.form__group--sight {
+    margin-top: 15px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 8px;
+    }
+  }
+}
+
+.form__group--sight {
+  @media (min-width: $tablet-width) {
+    grid-area: sight;
+  }
+}
+
+.form__group--snp {
+  @media (min-width: $tablet-width) {
+    grid-area: snp;
+    padding-left: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 79px;
+  }
+}
+
+.form__group--contacts {
+  padding-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    grid-area: contacts;
+    margin-top: 20px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 28px;
+  }
+}
+
+.form__group--impress {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    grid-area: impress;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 4px;
+  }
+}
+
+.form__group--impress::before {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "";
+    top: -80px;
+    bottom: 0;
+    right: 0;
+    width: 1px;
+    background-color: $color-light-gray;
+  }
+}
+
+.form__group--comment {
+  padding-right: 22px;
+  padding-bottom: 31px;
+  padding-left: 19px;
+
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    grid-area: comment;
+    padding: 20px 0 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 25px 0 16px;
+  }
+}
+
+.form__group--footer {
+  padding-right: 21px;
+  padding-left: 19px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+fieldset.form__group {
+  @media (max-width: calc($tablet-width - 1px)) {
+    border-bottom: 1px solid $color-light-gray;
+  }
+}
+
+.form__footer {
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.form__button {
+  width: 100%;
+  padding: 18px 0 14px;
+}
+
+.form__additional {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin: 0;
+    padding-top: 5px;
+    text-align: end;
+    align-self: center;
+    text-transform: uppercase;
+  }
+}

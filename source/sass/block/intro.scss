@@ -1,0 +1,98 @@
+
+.intro__welcome {
+  position: relative;
+  min-height: 389px;
+  margin-bottom: 30px;
+
+  background: url("../../img/background/intro-triangle-small.svg") bottom / 100%
+    37px no-repeat,
+    url("../../img/background/sedona.jpg") top / 100% auto no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../../img/background/intro-triangle-small.svg") bottom /
+      100% 37px no-repeat,
+      url("../../img/background/sedona@2x.jpg") top / 100% auto no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 518px;
+    margin-bottom: 42px;
+    background: url("../../img/background/intro-triangle-middle.svg") bottom /
+      auto no-repeat,
+      url("../../img/background/sedona-big.jpg") top / 100% auto no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/background/intro-triangle-middle.svg") bottom /
+        auto no-repeat,
+        url("../../img/background/sedona-big@2x.jpg") top / 100% auto no-repeat;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 53px;
+    background: url("../../img/background/intro-triangle-big.svg") bottom / auto
+      no-repeat,
+      url("../../img/background/sedona-big.jpg") top / 100% auto no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/background/intro-triangle-big.svg") bottom /
+        auto no-repeat,
+        url("../../img/background/sedona-big@2x.jpg") top / 100% auto no-repeat;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background: url("../../img/background/intro-text.svg") top 90px center /
+      282px 214px no-repeat;
+
+    @media (min-width: $tablet-width) {
+      background: url("../../img/background/intro-text.svg") top 77px left 50% /
+        461px auto no-repeat;
+    }
+  }
+}
+
+.intro__container {
+  padding: 0 30px 20px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 9px;
+  }
+}
+
+.intro__heading {
+  padding-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 25px;
+  }
+}
+
+.intro__text {
+  padding-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 33px;
+  }
+}
+
+.intro__text.page__text {
+  line-height: 26px;
+}

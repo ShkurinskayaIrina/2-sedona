@@ -1,0 +1,89 @@
+.site-menu {
+  margin: 0;
+  padding: 0;
+  background-color: $color-blue;
+  list-style-type: none;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    background-color: $color-white;
+    font-size: 14px;
+    line-height: 26px;
+  }
+}
+
+.site-menu__item {
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+
+  @media (max-width: calc($tablet-width - 1px)) {
+    border-bottom: 1px solid rgba($color-black, 0.2);
+  }
+
+  &:not(:first-child) {
+    @media (max-width: calc($tablet-width - 1px)) {
+      border-top: 1px solid rgba($color-white, 0.2);
+    }
+  }
+
+  .page-header__menu-additional > & {
+    @media (max-width: calc($tablet-width - 1px)) {
+      border-top: 1px solid rgba($color-white, 0.2);
+    }
+  }
+
+  .page-header__menu-additional > &:last-child {
+    border-bottom: 1px solid transparent;
+  }
+}
+
+.site-menu__link {
+  display: block;
+  text-align: center;
+  padding: 9px 5px 5px;
+  color: $color-white;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
+
+  &:hover {
+    background-color: $color-blue-grey;
+  }
+
+  &:focus {
+    outline: 2px solid $color-black;
+    outline-offset: -2px;
+  }
+
+  &:active {
+    color: rgba($color-white, 0.3);
+    background-color: $color-blue-grey-dack;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 14px 5px;
+    color: $color-black;
+
+    &:hover {
+      color: $color-blue;
+      background-color: inherit;
+    }
+
+    &:active {
+      color: $color-black;
+      opacity: 0.3;
+      background-color: inherit;
+    }
+  }
+
+  .site-menu__item--active & {
+    @media (min-width: $tablet-width) {
+      color: $color-dark-gray;
+    }
+  }
+}

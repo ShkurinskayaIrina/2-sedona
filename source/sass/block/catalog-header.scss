@@ -1,0 +1,30 @@
+.catalog-header__container {
+  padding: 31px 20px 12px;
+
+  @media (min-width: $tablet-width) {
+    padding: 61px 60px 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 98px;
+  }
+}
+
+.catalog-header__heading {
+  margin: 0;
+  margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
+  }
+}
+
+.catalog-header__text {
+  margin: 0;
+
+  @media (max-width: calc($tablet-width - 1px)) {
+    & br {
+      display: none;
+    }
+  }
+}

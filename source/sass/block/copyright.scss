@@ -1,0 +1,32 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-black;
+
+  &:hover .copyright__text,
+  &:active .copyright__text {
+    visibility: hidden;
+  }
+
+  &:hover svg {
+    color: $color-blue;
+  }
+
+  &:focus {
+    outline: 2px solid $color-black;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
+}
+
+.copyright__text {
+  max-width: 80%;
+}

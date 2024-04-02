@@ -1,0 +1,95 @@
+.control {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+
+  font-size: 18px;
+  font-weight: 700;
+  color: $color-black;
+}
+
+.control__input {
+  margin: 0;
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  width: 100%;
+  opacity: 0;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+
+  &:hover + .control__label::before {
+    background-color: $color-light-gray;
+  }
+
+  &:active + .control__label::before {
+    background-color: $color-smok-gray2;
+  }
+
+  &:active + .control__label::after {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    & + .control__label::before,
+    & + .control__label::after {
+      outline: 2px solid $color-black;
+    }
+  }
+}
+
+.control__label {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  column-gap: 22px;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 19px;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: 56px;
+    border-radius: 5px;
+
+    @media (min-width: $desktop-width) {
+      border-radius: 0;
+    }
+  }
+
+  &::before {
+    background-color: $color-smok-gray;
+  }
+}
+
+.control__input[type="checkbox"] + .control__label {
+  @media (min-width: $tablet-width) {
+    column-gap: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 25px;
+  }
+}
+
+.control__input[type="radio"] + .control__label::before,
+.control__input[type="radio"] + .control__label::after {
+  border-radius: 50%;
+}
+
+.control__input[type="radio"]:checked + .control__label::after {
+  background-clip: padding-box;
+  background-color: $color-light-black;
+  border: 17px solid transparent;
+}
+
+.control__input[type="checkbox"]:checked + .control__label::after {
+  background-image: url("../../img/icon/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}

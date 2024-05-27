@@ -89,7 +89,7 @@
 }
 
 .control__input[type="checkbox"]:checked + .control__label::after {
-  background-image: url("../../img/icon/tick.svg");
+  background-image: url("../img/icon/tick.svg");
   background-repeat: no-repeat;
   background-position: center center;
 }

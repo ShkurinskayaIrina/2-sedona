@@ -11,46 +11,46 @@
     content: "";
     min-height: 158px;
     width: 100%;
-    background-image: url("../../img/background/sedona.svg"),
-      url("../../img/background/intro-triangle-small.svg"),
-      url("../../img/background/form-header.jpg");
+    background-image: url("../img/background/sedona.svg"),
+      url("../img/background/intro-triangle-small.svg"),
+      url("../img/background/form-header.jpg");
     background-repeat: no-repeat;
     background-position: top 52px center, bottom, top;
     background-size: auto, 100% 37px, 100%;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/background/sedona.svg"),
-        url("../../img/background/intro-triangle-small.svg"),
-        url("../../img/background/form-header@2x.jpg");
+      background-image: url("../img/background/sedona.svg"),
+        url("../img/background/intro-triangle-small.svg"),
+        url("../img/background/form-header@2x.jpg");
     }
 
     @media (min-width: $tablet-width) {
       min-height: 290px;
-      background-image: url("../../img/background/sedona.svg"),
-        url("../../img/background/intro-triangle-middle.svg"),
-        url("../../img/background/form-header-middle.jpg");
+      background-image: url("../img/background/sedona.svg"),
+        url("../img/background/intro-triangle-middle.svg"),
+        url("../img/background/form-header-middle.jpg");
       background-position: top 95px center, bottom, top;
       background-size: 457px auto, 100%, 100%;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../../img/background/sedona.svg"),
-          url("../../img/background/intro-triangle-middle.svg"),
-          url("../../img/background/form-header-middle@2x.jpg");
+        background-image: url("../img/background/sedona.svg"),
+          url("../img/background/intro-triangle-middle.svg"),
+          url("../img/background/form-header-middle@2x.jpg");
       }
     }
 
     @media (min-width: $desktop-width) {
       min-height: 301px;
-      background-image: url("../../img/background/sedona.svg"),
-        url("../../img/background/intro-triangle-big.svg"),
-        url("../../img/background/form-header-big.jpg");
+      background-image: url("../img/background/sedona.svg"),
+        url("../img/background/intro-triangle-big.svg"),
+        url("../img/background/form-header-big.jpg");
       background-position: top 102px center, bottom, top;
       background-size: 460px auto, 100%, 100%;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../../img/background/sedona.svg"),
-          url("../../img/background/intro-triangle-big.svg"),
-          url("../../img/background/form-header-big@2x.jpg");
+        background-image: url("../img/background/sedona.svg"),
+          url("../img/background/intro-triangle-big.svg"),
+          url("../img/background/form-header-big@2x.jpg");
       }
     }
   }

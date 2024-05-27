@@ -1,5 +1,5 @@
-import './menu.js';
-import { modalSuccessOpen, modalErrorOpen } from './modal.js';
+import './menu.min.js';
+import { modalSuccessOpen, modalErrorOpen } from './modal.min.js';
 
 const formContainer = document.querySelector('.form__container');
 

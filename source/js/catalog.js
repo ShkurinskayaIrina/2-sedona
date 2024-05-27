@@ -1,3 +1,3 @@
-import './menu.js';
-import './likes.js';
-import './video.js';
+import './menu.min.js';
+import './likes.min.js';
+import './video.min.js';

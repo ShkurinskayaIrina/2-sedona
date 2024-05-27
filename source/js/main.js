@@ -1,1 +1,1 @@
-import './menu.js';
+import './menu.min.js';

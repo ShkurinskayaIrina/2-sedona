@@ -1,4 +1,4 @@
-import './menu.js';
+import './menu.min.js';
 const likeButtons = document.querySelectorAll('.card__like');
 
 const onLikeButtonClick = (evt) => {

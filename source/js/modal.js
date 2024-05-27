@@ -1,4 +1,4 @@
-import { isEscEvent } from './util.js';
+import { isEscEvent } from './util.min.js';
 
 const pageModal = document.querySelector('.page-modal');
 

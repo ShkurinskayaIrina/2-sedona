@@ -41,7 +41,7 @@ const setControlsClick = () => {
 };
 
 const createVideoBlock = () => {
-  const id = 'video/Presentation.mp4';
+  const id = 'video/presentation.mp4';
 
   const VideoBlock = document.createElement('video');
   VideoBlock.setAttribute('allowfullscreen', '');

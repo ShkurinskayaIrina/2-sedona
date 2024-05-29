@@ -43,7 +43,8 @@
   </header>
   <main class="page-main page-inner">
     <header class="page-inner__header catalog-header">
-      <div class="catalog-header__container">
+      <div class="page-main__header-img page-inner__img"></div>
+      <div class="catalog-header__description">
         <h1 class="catalog-header__heading page-inner__heading">Фото и видео</h1>
         <p class="catalog-header__text page-inner__text">Не можете решиться на путешествие из-за курса?<br>Фотографии помогут вам забыть о политике и экономике.</p>
       </div>
@@ -73,7 +74,7 @@
             <button  class="card__like card__like--add" type="button">
               <span class="visually-hidden">Оценил</span>
               <svg aria-hidden="true" focusable="false" width="23" height="21" fill="currentColor" role="img">
-                <use xlink:href="img/sprite.svg#icon-like"></use>
+                <use xlink:href="img/sprite.svg#like-icon"></use>
               </svg>
               <span class="card__like-counter">1350</span>
             </button>
@@ -100,7 +101,7 @@
             <button  class="card__like card__like--add" type="button">
               <span class="visually-hidden">Оценил</span>
               <svg aria-hidden="true" focusable="false" width="23" height="21" fill="currentColor" role="img">
-                <use xlink:href="img/sprite.svg#icon-like"></use>
+                <use xlink:href="img/sprite.svg#like-icon"></use>
               </svg>
               <span class="card__like-counter">143</span>
             </button>
@@ -127,7 +128,7 @@
             <button  class="card__like card__like--add" type="button">
               <span class="visually-hidden">Оценил</span>
               <svg aria-hidden="true" focusable="false" width="23" height="21" fill="currentColor" role="img">
-                <use xlink:href="img/sprite.svg#icon-like"></use>
+                <use xlink:href="img/sprite.svg#like-icon"></use>
               </svg>
               <span class="card__like-counter">96</span>
             </button>
@@ -154,7 +155,7 @@
             <button  class="card__like card__like--add" type="button">
               <span class="visually-hidden">Оценил</span>
               <svg aria-hidden="true" focusable="false" width="23" height="21" fill="currentColor" role="img">
-                <use xlink:href="img/sprite.svg#icon-like"></use>
+                <use xlink:href="img/sprite.svg#like-icon"></use>
               </svg>
               <span class="card__like-counter">254</span>
             </button>
@@ -170,13 +171,13 @@
           <div class="video__wrapper">
             <a class="video__link" href="https://www.youtube.com/embed/-pjw1_GucsA" target="_blank">
               <picture class="video__img">
-                <source type="image/webp" media="(min-width: 1280px)" srcset="video/poster-big.webp 1x, video/poster-big@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="video/poster-middle.webp 1x, video/poster-middle@2x.webp 2x">
-                <source type="image/webp" srcset="video/poster.webp 1x, video/poster@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1280px)" srcset="img/poster/poster-big.webp 1x, img/poster/poster-big@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/poster/poster-middle.webp 1x, img/poster/poster-middle@2x.webp 2x">
+                <source type="image/webp" srcset="img/poster/poster.webp 1x, img/poster/poster@2x.webp 2x">
 
-                <source media="(min-width: 1280px)" srcset="video/poster-big.jpg 1x, video/poster-big@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="video/poster-middle.jpg 1x, video/poster-middle@2x.jpg 2x">
-                <img class="video__img" src="video/poster.jpg" srcset="video/poster@2x.jpg 2x" width="320" height="201" alt="Видеопрезентация города Седона">
+                <source media="(min-width: 1280px)" srcset="img/poster/poster-big.jpg 1x, img/poster/poster-big@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/poster/poster-middle.jpg 1x, img/poster/poster-middle@2x.jpg 2x">
+                <img class="video__img" src="img/poster/poster.jpg" srcset="img/poster/poster@2x.jpg 2x" width="320" height="201" alt="Видеопрезентация города Седона">
               </picture>
             </a>
           </div>
@@ -185,7 +186,7 @@
             <button class="controls__button controls__replay" type="button">
               <span class="visually-hidden">Повтор</span>
               <svg aria-hidden="true" focusable="false" width="16" height="20" role="img">
-                <use xlink:href="img/sprite.svg#icon-replay"></use>
+                <use xlink:href="img/sprite.svg#replay"></use>
               </svg>
             </button>
             <div class="controls__volume">
@@ -195,13 +196,13 @@
             <button class="controls__button controls__subtitles" type="button">
               <span class="visually-hidden">Субтитры</span>
               <svg aria-hidden="true" focusable="false" width="32" height="20" role="img">
-                <use xlink:href="img/sprite.svg#icon-subtitles"></use>
+                <use xlink:href="img/sprite.svg#subtitles"></use>
               </svg>
             </button>
             <button class="controls__button controls__fullscreen" type="button">
               <span class="visually-hidden">Полный экран</span>
               <svg aria-hidden="true" focusable="false" width="20" height="20" role="img">
-                <use xlink:href="img/sprite.svg#icon-fullscreen"></use>
+                <use xlink:href="img/sprite.svg#fullscreen"></use>
               </svg>
             </button>
           </div>
@@ -217,7 +218,7 @@
         <a class="social__link" href="#">
           <span class="visually-hidden">Твиттеp</span>
           <svg aria-hidden="true" focusable="false" width="18" height="15" fill="currentColor" role="img">
-            <use xlink:href="img/sprite.svg#icon-twitter"></use>
+            <use xlink:href="img/sprite.svg#twitter"></use>
           </svg>
         </a>
       </li>
@@ -225,7 +226,7 @@
         <a class="social__link" href="#">
           <span class="visually-hidden">Фэйсбук</span>
           <svg aria-hidden="true" focusable="false" width="9" height="19" fill="currentColor" role="img">
-            <use xlink:href="img/sprite.svg#icon-facebook"></use>
+            <use xlink:href="img/sprite.svg#facebook"></use>
           </svg>
         </a>
       </li>
@@ -233,7 +234,7 @@
         <a class="social__link" href="#">
           <span class="visually-hidden">Ютуб</span>
           <svg aria-hidden="true" focusable="false" width="20" height="14" fill="currentColor" role="img">
-            <use xlink:href="img/sprite.svg#icon-youtube"></use>
+            <use xlink:href="img/sprite.svg#youtube"></use>
           </svg>
         </a>
       </li>
@@ -243,7 +244,7 @@
       <span class="copyright__text">Разработано</span>
       <span class="visually-hidden">HTML Academy</span>
       <svg class="copyright__image" width="27" height="35" role="img">
-        <use xlink:href="img/sprite.svg#logo-academy"></use>
+        <use xlink:href="img/sprite.svg#htmlacademy"></use>
       </svg>
     </a>
   </footer>

@@ -1,4 +1,4 @@
-# Личный проект «{{projectTitle}}» от [HTML Academy](https://htmlacademy.ru)
+# Личный проект «Sedona» от [HTML Academy](https://htmlacademy.ru)
 
 HTML, SASS, БЭМ.
 
